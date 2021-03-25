@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Amaizing World</title>
+  <link rel="icon" href="картинки/favicon.png">
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Rufina&display=swap" rel="stylesheet">
+
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div  class = "header">
+    <div class = "empty-div"> </div>
+      <div class = "header-logo">
+        <div class = "header-title">
+          <img src="картинки/left.png">
+          <h1>Amazing World</h1>
+          <img src="картинки/right.png">
+        </div>
+       <p><img id = "logo" src="картинки/logo.png"></p>
+      </div>
+      <div class = "header-cart">
+          <p>Welcome to our online books store!!!</p>
+          <div class = "flex-row">
+            <p> Cart:</p>
+            <img id = "cart" src="картинки/cart.png" width="30" height="30">
+            <div class = "flex-column">
+              <p>Wishful:</p>
+              <p>Orders:</p>
+            </div>
+          </div>
+     </div>
+   </div>
+
+  <nav class = "nav">
+     <div class = "navigation">
+       <div class = "left">
+         <a target= "_self" href="" class = "nav-elem">Home</a>
+         <a target= "_self" href="" class = "nav-elem">New</a>
+         <a target= "_self" href="" class = "nav-elem">Books</a>
+         <a target= "_self" href="information.html" class = "nav-elem">Bestsellers</a>
+         <a target= "_self" href="" class = "nav-elem">Collections</a>
+         <a target= "_self" href="" class = "nav-elem">LogIn</a>
+       </div>
+       <div class="right">
+         <form>
+         <input type="text" placeholder="Search...">
+       </form>
+       <a href="" class = "pic">
+         <img id = "find_pic" src="картинки/find.png">
+       </a>
+       </div>
+     </div>
+ </nav>
+
+  <div class = "popular-books">
+    <div class="col-md-folder">
+      <img id = "books-pic" src="картинки/books.png">
+      <h2>Popular</h2>
+      <p>Books that will appial to many <br>reaters</p>
+      <p>
+        <a class = "info-popular-books" target = "_self" href="">
+          <span>Learn More</span>
+        </a>
+      </p>
+    </div>
+  </div>
+
+<div class="flex">
+  <div class="order-book-flex">
+    <img id = "notes-pic" src="картинки/notes.png">
+    <h4>Order a books<br> online</h4>
+    <img id = "magazin-pic" src="картинки/magazin.png">
+    <a class = "button-order-book" target = "_self" href="order.html">
+      <span>Learn More</span>
+    </a>
+  </div>
+  <div class="customer-reviews-flex">
+    <img id = "coffee-pic" src="картинки/coffee.png">
+    <h4>Customer reviews</h4>
+      <a class = "button-customer-reviews" target = "_self" href="">
+        <span>Learn More</span>
+      </a>
+      <img id = "laptop-pic" src="картинки/laptop.png">
+  </div>
+</div>
+
+<div class="collections-books-flex">
+  <div class="collections-books">
+    <h2>Collections of books by genre</h2>
+        <div class="collections-books-pictures">
+          <img src="картинки/fantasy.jpg">
+          <img src="картинки/novel.jpg">
+          <img src="картинки/comics.jpeg">
+          <img src="картинки/classic.jpg">
+          <img src="картинки/psychology.jpg">
+          <div class="name-books-genre">
+            <a class = "fantasy" target = "_self" href=""><u>Fantasy</u></a>
+            <a class = "novel" target = "_self" href=""><u>Novel</u></a>
+            <a class = "comics" target = "_self" href=""><u>Comics</u></a>
+            <a class = "classic" target = "_self" href=""><u>Classic</u></a>
+            <a class = "psychology" target = "_self" href=""><u>Psychology</u></a>
+          </div>
+        </div>
+  </div>
+</div>
+</body>
+</html>
