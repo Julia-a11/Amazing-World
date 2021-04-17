@@ -1,118 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Amazing World</title>
-  <link rel="icon" href="картинки/favicon.png">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Amazing World</title>
+    <link rel="icon" href="картинки/favicon.png">
+    <link rel="stylesheet" href="style.css">
 
-  <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
-integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"></script>
 
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+       (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+       m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+       (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(76029388, "init", {
+              clickmap:true,
+              trackLinks:true,
+              accurateTrackBounce:true
+        });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/76029388" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <div  class = "header">
-    <div class = "empty-div"> </div>
-      <div class = "header-logo">
-        <div class = "header-title">
-          <img src="картинки/left.png">
-          <h1>Amazing World</h1>
-          <img src="картинки/right.png">
+<div class="header">
+    <div class="empty-div"></div>
+    <div class="header-logo">
+        <div class="header-title">
+            <img src="картинки/left.png">
+            <h1>Amazing World</h1>
+            <img src="картинки/right.png">
         </div>
-       <p><img id = "logo" src="картинки/logo.png"></p>
-      </div>
-      <div class = "header-cart">
-          <p>Welcome to our online books store!!!</p>
-          <div class = "flex-row">
+        <p><img id="logo" src="картинки/logo.png"></p>
+    </div>
+    <div class="header-cart">
+        <p>Welcome to our online books store!!!</p>
+        <div class="flex-row">
             <p> Cart:</p>
-            <img id = "cart" src="картинки/cart.png" width="30" height="30">
-            <div class = "flex-column">
-              <p>Wishful:</p>
-              <p>Orders:</p>
+            <img id="cart" src="картинки/cart.png" width="30" height="30">
+            <div class="flex-column">
+                <p>Wishful:</p>
+                <p>Orders:</p>
             </div>
-          </div>
-     </div>
-   </div>
-
-  <nav class = "nav">
-     <div class = "navigation">
-       <div class = "left">
-         <a target= "_self" href="index.html" class = "nav-elem">Home</a>
-         <a target= "_self" href="" class = "nav-elem">New</a>
-         <a target= "_self" href="" class = "nav-elem">Books</a>
-         <a target= "_self" href="information.html" class = "nav-elem">Bestsellers</a>
-         <a target= "_self" href="" class = "nav-elem">Collections</a>
-         <a target= "_self" href="" class = "nav-elem">LogIn</a>
-       </div>
-       <div class="right">
-         <form>
-         <input type="text" name= "search" placeholder="Search...">
-       </form>
-       <a href="" class = "pic">
-         <img id = "find_pic" src="картинки/find.png">
-       </a>
-       </div>
-     </div>
-  </nav>
-
-<div class="order-regestration">
-    <h1>Order Registration</h1>
-  <div class="delivery-adress">
-    <h2>Delivery Adress:</h2>
-    <div class="adress">
-      <p>City <input type="text" class = "city" name= "city-adress" placeholder=""></p>
-      <p>Street,home <input type="text" name= "street-adress" placeholder=""></p>
-    </div>
-  </div>
-</div>
-  <div class="recipient">
-    <h2>Recipien:</h2>
-    <div class="user-information">
-      <form class = "e-mail">
-        <p>E-mail <input class = "e-mail" type="text" name= "email-information" placeholder=""></p>
-      </form>
-      <form class = "phone">
-        <p>Phone number <input class = "phone-number" type="text" name= "phone-information" placeholder=""></p>
-      </form>
-      <form class = "name">
-        <p>Name <input class = "name" type="text" name= "name-information" placeholder=""></p>
-      </form>
-      <form class = "surname">
-        <p>Surname <input class = "surname" type="text" name= "surname-information" placeholder=""></p>
-      </form>
-      </div>
-    </div>
-    <div class = "order-registration-flex">
-      <div class="receiving-method">
-        <h2>Receiving method:</h2>
-          <input type="radio" id = "Post office" name="status" value = "1">
-          <label for = "Post office">Post office</label>
-          <input type="radio" id = "Pick-up point" name="status" value = "2">
-          <label for = "Pick-up point">Pick-up point</label>
-          <input type="radio" id = "Express delivery" name="status" value = "3">
-          <label for = "Express delivery">Express delivery</label>
         </div>
-      <div class="payment-method">
-        <h2>Payment Method:</h2>
-        <input type="radio" id = "Upon receipt" name="status-payment" value = "1">
-        <label for="Upon receipt">Upon receipt</label>
-        <input type="radio" id = "Bank card" name="status-payment" value = "2">
-        <label for="Bank card">Bank card</label>
-      </div>
-    <div class = accept-button>
-        <button type="submit">Pay order</button>
     </div>
 </div>
+
+<nav class="nav">
+    <div class="navigation">
+        <div class="left">
+            <a target="_self" href="index.html" class="nav-elem">Home</a>
+            <a target="_self" href="" class="nav-elem">New</a>
+            <a target="_self" href="" class="nav-elem">Books</a>
+            <a target="_self" href="information.html" class="nav-elem">Bestsellers</a>
+            <a target="_self" href="" class="nav-elem">Collections</a>
+            <a target="_self" href="" class="nav-elem">LogIn</a>
+        </div>
+        <div class="right">
+            <form>
+                <input type="text" name="search" placeholder="Search...">
+            </form>
+            <a href="" class="pic">
+                <img id="find_pic" src="картинки/find.png">
+            </a>
+        </div>
+    </div>
+</nav>
+
+<form name="orderRegistration">
+    <div class="order-regestration">
+        <h1>Order Registration</h1>
+        <div class="delivery-adress">
+            <h2>Delivery Adress:</h2>
+            <div class="adress">
+                <div class="city">
+                    <p>City <input type="text" class="city" name="city" placeholder=""></p>
+                </div>
+                <div class="street">
+                    <p>Street,home <input type="text" class="street" name="street" placeholder=""></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="recipient">
+        <h2>Recipien:</h2>
+        <div class="user-information">
+            <div class="e-mail">
+                <p>E-mail <input class="e-mail" type="text" name="email" placeholder=""></p>
+            </div>
+            <div class="phone">
+                <p>Phone number <input class="phone-number" type="text" name="phone" placeholder=""></p>
+            </div>
+            <div class="name">
+                <p>Name <input class="name" type="text" name="name" placeholder=""></p>
+            </div>
+            <div class="surname">
+                <p>Surname <input class="surname" type="text" name="surname" placeholder=""></p>
+            </div>
+        </div>
+    </div>
+    <div class="order-registration-flex">
+        <div class="receiving-method">
+            <h2>Receiving method:</h2>
+            <input type="radio" id="Post office" name="status" value="1">
+            <label for="Post office">Post office</label>
+            <input type="radio" id="Pick-up point" name="status" value="2">
+            <label for="Pick-up point">Pick-up point</label>
+            <input type="radio" id="Express delivery" name="status" value="3">
+            <label for="Express delivery">Express delivery</label>
+        </div>
+        <div class="payment-method">
+            <h2>Payment Method:</h2>
+            <input type="radio" id="Upon receipt" name="status_payment" value="1">
+            <label for="Upon receipt">Upon receipt</label>
+            <input type="radio" id="Bank card" name="status_payment" value="2">
+            <label for="Bank card">Bank card</label>
+        </div>
+        <div class=accept-button>
+            <button type="submit" name="submit" onclick="click">Pay order</button>
+        </div>
+    </div>
+</form>
+<script src="site.js"></script>
 </body>
 </html>
